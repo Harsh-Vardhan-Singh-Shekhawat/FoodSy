@@ -1,0 +1,16 @@
+.intro{
+    /* background-color: rgb(83, 82, 82); */
+    color: rgb(25, 25, 25);
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+    padding: 1rem;
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-size:large;
+    /* box-shadow: 4px 4px 10px 5px gray; */
+    transform: translate(-50%,-50%);
+
+}

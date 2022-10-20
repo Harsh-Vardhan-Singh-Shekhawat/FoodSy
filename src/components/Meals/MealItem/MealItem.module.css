@@ -1,0 +1,27 @@
+.li{
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+}
+.price{
+    padding: 1.5rem;
+    font-style:normal;
+    /* color:  rgb(248, 174, 77); */
+    font-weight: 700;
+}
+.addBtn{
+    border: none;
+    width: 6em;
+    height: 2rem;
+    border-radius: 20%/50%;
+    color: aliceblue;
+    background: #f54702;
+    cursor: pointer;
+}
+.addBtn:hover{
+    background: #8a2b06;
+}
+.div{
+    margin-left: 18px;
+    margin-top: 5px;
+}
