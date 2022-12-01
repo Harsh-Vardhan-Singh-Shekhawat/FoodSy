@@ -1,6 +1,19 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import styles from './MealItem.module.css'
+import MealItemForm from './MealItemForm'
+import CartContext from '../../../store/CartContext'
+
 const MealItem = (props) => {
+  const cartCtxt = useContext(CartContext);
+  const addToCartHandler = (amount) => {
+    cartCtxt.addItem({
+      id:props.id,
+      name:props.name,
+      amount:amount,
+      price:props.price
+    })
+  }
+
   return (
     <React.Fragment>
     <hr />  
@@ -10,7 +23,7 @@ const MealItem = (props) => {
         <p>{props.desc}</p>
       </div>
       <div className={styles.price}>
-        <button className={styles.addBtn}>+ Add</button>
+        <MealItemForm onAddToCart = {addToCartHandler} />
         <br />
         <div className={styles.div}>{props.price}</div>
       </div>

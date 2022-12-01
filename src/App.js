@@ -1,15 +1,18 @@
 import react from 'react';
 import Header from './components/Layout/Header'
 import Meals from './components/Meals/Meals';
+import CartProvider from './store/CartProvider';
+// import Modal from './components/UI/Modal';
 function App() {
   return (
-    <div className="App">
+    <CartProvider >
+    
     <Header />
     <main>
       <Meals />
     </main>
     
-    </div>
+    </CartProvider>
   );
 }
 

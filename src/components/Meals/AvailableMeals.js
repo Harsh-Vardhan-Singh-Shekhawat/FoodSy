@@ -6,25 +6,29 @@ import MealItem from "./MealItem/MealItem";
 const dummyMeals = [
   {
     id: 1,
+    key:1,
     name: "Butter Chicken",
-    desc: "finest fish",
+    desc: "Swaad hai ek baar kha ke to dekho",
     price: "₹249",
   },
   {
     id: 2,
+    key:2,
     name: "Biryani",
-    desc: "nice",
+    desc: "Are bhot hi badhiya hai ji",
     price: "₹399",
   },
   {
     id: 3,
-    name: "Margherita",
+    key:3,
+    name: "Margherita Pizza",
     desc: "Very Nice",
     price: "₹149",
   },
   {
     id: 4,
-    name: "Crispy Chicken",
+    key:4,
+    name: "Crispy Chicken Burger",
     desc: "very Very nice",
     price: "₹199",
   },
